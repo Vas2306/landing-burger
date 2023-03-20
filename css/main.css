@@ -13,7 +13,9 @@ body{
 .list{
   list-style: none;
 }
-
+.current{
+  color: var(--color-title);
+}
 h1,
 h2,
 h3,
@@ -111,7 +113,7 @@ img {
   margin-left: 10px;
   text-decoration: line-through;
 }
-.order-button {
+.button {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
