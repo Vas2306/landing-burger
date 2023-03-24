@@ -2,6 +2,7 @@
   --background-black: #1C1C1C;
   --background-grey: #312F30;
 --color-accent: #F6762C;
+--accent-blur: rgba(246, 118, 44, 0.5);
 --color-title: #FFFFFF;
 --color-subtitle: rgba(255, 255, 255, 0.7);
 --color-footer: rgba(255, 255, 255, 0.8);
@@ -9,14 +10,23 @@
 body{
   background-color: var(--background-black);
   color:var(--color-title);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.19;
 }
 .list{
   list-style: none;
 }
+.link{
+  text-decoration: none;
+}
 .current{
   color: var(--color-title);
+  font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
 }
-h1,
+/* h1,
 h2,
 h3,
 p {
@@ -25,46 +35,90 @@ p {
 
 img {
   display: block;
+} */
+.header-link{
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-subtitle);
 }
-.hero{
+/* .hero{
   width: 1600px;
   height: 880px; 
   background-image: url('../img/bgc.jpg');
+} */
+.hero-addtext{
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.1em;
 }
-.food-list {
+.hero-title{
+  font-weight: 500;
+    font-size: 57px;
+    line-height: 1.18;
+}
+.hero-text{
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--color-subtitle);
+}
+/* .food-list {
   width: 1143px;
   height: 323px;
   display: flex;
   gap: 31px;
-}
+} */
 .food-item {
   background-color:var(--background-grey);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
-.food-img {
+/* .food-img {
   margin-bottom: 28px;
-}
+} */
 .food-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+  /* text-align: center; */
 
-  margin-bottom: 13px;
+  /* margin-bottom: 13px; */
 }
 .food-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-left: 19px;
-  margin-right: 19px;
+color: var(--color-subtitle);
 
- 
+  /* text-align: center;
+  margin-left: 19px;
+  margin-right: 19px; */
+}
+
+.king-title{
+  font-weight: 500;
+    font-size: 44px;
+    line-height: 1.18;
+}
+.king-text{
+  color: var(--color-subtitle);
+}
+.king-new{
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+    color: var(--color-accent);
+}
+.king-old{
+  
+    font-size: 16px;
+    line-height: 1.19;
+   text-decoration: line-through;
+  
+   
+    color: var(--accent-blur);
 }
 /* .product-img {
 } */
-.product-item {
+/* .product-item {
   position: relative;
 }
 .product-overlay {
@@ -82,45 +136,91 @@ img {
 .product-right {
   bottom: 62px;
   left: 290px;
-}
+} */
 .product-subtitle {
   font-weight: 500;
   font-size: 30px;
   line-height: 1.17;
 
  
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .product-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
 
+color: var(--color-subtitle);
   
  
-  margin-bottom: 11px;
+  /* margin-bottom: 11px; */
 }
 .product-price {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
   letter-spacing: 0.1em;
   color:var(--color-accent);
-  margin-bottom: 11px;
+  /* margin-bottom: 11px; */
 }
 .product-price > span {
-  opacity: 0.5;
-  margin-left: 10px;
+ 
+  /* margin-left: 10px; */
   text-decoration: line-through;
+  color: var(--accent-blur);
+}
+
+.team-text{
+  color: var(--color-subtitle);
+}
+.team-name{
+  font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+}
+.team-addname{
+  font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--color-subtitle);
+
+  }
+.downloud-title{
+  font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+}  
+.mailto{
+  font-style: normal;
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--color-footer);
+}
+.footer-text{
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--color-footer);
+}
+.footer-title{
+  font-weight: 500;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
 }
 .button {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
+color: inherit;
   background:var(--color-accent);
-  border-radius: 5px;
+  /* border-radius: 5px;
   padding-top: 13px;
   padding-bottom: 12px;
   padding-left: 36px;
-  padding-right: 36px;
+  padding-right: 36px; */
+}
+.btn-big{
+font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  
+}
+.btn-small{
+font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
 }

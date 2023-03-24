@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burger landing page Dark mode</title>
-    <link
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -21,28 +22,28 @@
           <img class="header-logo" src="img/logo.svg" alt="logo" />
         </a>
         <ul class="header-list list">
-          <li class="header-item"><a class="header-link" href="">HOME</a></li>
+          <li class="header-item"><a class="header-link current" href="">HOME</a></li>
           <li class="header-item"><a class="header-link" href="">PAGES</a></li>
           <li class="header-item"><a class="header-link" href="">OUR OFFER</a></li>
           <li class="header-item"><a class="header-link" href="">PRICING</a></li>
           <li class="header-item"><a class="header-link" href="">SHOP</a></li>
         </ul>
       </nav>
-      <button class="button" type="button">ORDER NOW</button>
+      <button class="button btn-big" type="button">ORDER NOW</button>
     </header>
     <main>
       <section class="hero">
-        <p>FAST FOOD BURGERS</p>
-        <h1>The fastest food, for instant hunger.</h1>
-        <p>
+        <p class="hero-addtext">FAST FOOD BURGERS</p>
+        <h1 class="hero-title">The fastest food, for instant hunger.</h1>
+        <p class="hero-text">
           Some food has looked so awful that it's looked like something that the
           dog's brought home, yet after one mouthful I've been left eating my
           thoughts, my words & my food and gone back for seconds.
         </p>
-        <button class="button" type="button">ORDER NOW</button>
+        <button class="button btn-big" type="button">ORDER NOW</button>
       </section>
 
-      <section>
+      <section class="food">
         <ul class="food-list list">
           <li class="food-item">
             <img
@@ -99,15 +100,15 @@
         </ul>
       </section>
 
-      <section>
+      <section class="king">
         <img width="549" height="499" src="img/big-gumberger.png" alt="" />
-        <h2>Burger King</h2>
-        <p>
+        <h2 class="king-title">Burger King</h2>
+        <p class="king-text">
           Together with McDonald’s, Burger King has grown to become synonymous
           with burgers in the US.
         </p>
-        <p>$6<span>$8</span></p>
-       <button class="button" type="button">ORDER NOW</button>
+        <p class="king-new">$6<span class="king-old">$8</span></p>
+       <button class="button btn-big" type="button">ORDER NOW</button>
       </section>
 
       <section class="product">
@@ -126,7 +127,7 @@
                 Dairy Queen is one of the biggest fast-food.
               </p>
               <p class="product-price">$4<span>$6</span></p>
-             <button class="button" type="button">ORDER NOW</button>
+             <button class="button btn-small" type="button">ORDER NOW</button>
             </div>
           </li>
           <li class="product-item">
@@ -183,20 +184,20 @@
         </ul>
       </section>
 
-      <section>
+      <section class="team">
         <img src="img/people.png" width="365" height="360.26" alt="our team" />
         <img src="img/quotes.png" width="47" height="46" alt="" />
-        <p>
+        <p class="team-text">
           Thanks a lot for the prompt service. Really appreciate. Excellence
           taste in Every Bite.Add a joy of best Taste. Foodie Moments.
         </p>
-        <p>Adele A. McNeill</p>
-        <p>AMIRICAN</p>
+        <p class="team-name">Adele A. McNeill</p>
+        <p class="team-addname">AMIRICAN</p>
       </section>
 
-      <section>
-        <h2>Download Our Menu</h2>
-        <a class="button" href="">DOWNLOAD</a>
+      <section class="downloud">
+        <h2 class="downlowd-title">Download Our Menu</h2>
+        <a class="button btn-big link" href="">DOWNLOAD</a>
         </section>
     </main>
    <footer>
@@ -204,33 +205,33 @@
         <img src="img/logo.svg" alt="" width="132" height="132">
       </a>
       <address>
-        <a href="mailto:fastfood_usa@gmail.com">
+        <a class="link mailto" href="mailto:fastfood_usa@gmail.com">
           <svg  width="12" height="12"></svg>
           fastfood_usa@gmail.com</a>
-        <a href="mailto: www.fastfood_usa.com">
+        <a class="link mailto" href="mailto: www.fastfood_usa.com">
           <svg  width="12" height="12"></svg>
           www.fastfood_usa.com</a>
       </address>
-      <ul>
-        <li><a href="">Our menu</a></li>
-        <li><a href="">Breakfast</a></li>
-        <li><a href="">Lunce</a></li>
-        <li><a href="">Dinner</a></li>
+      <ul class="list">
+        <li><a class="link footer-title" href="">Our menu</a></li>
+        <li><a class="link footer-text" href="">Breakfast</a></li>
+        <li><a class="link footer-text" href="">Lunce</a></li>
+        <li><a class="link footer-text" href="">Dinner</a></li>
       </ul>
-      <ul>
-        <li><a href="">Information</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">Testimonial</a></li>
-        <li><a href="">Event</a></li>
+      <ul class="list">
+        <li><a class="link footer-title" href="">Information</a></li>
+        <li><a class="link footer-text" href="">About us</a></li>
+        <li><a class="link footer-text" href="">Testimonial</a></li>
+        <li><a class="link footer-text" href="">Event</a></li>
       </ul>
-      <ul>
-        <li><a href="">Useful Links</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Support</a></li>
-        <li><a href="">Conditions</a></li>
+      <ul class="list">
+        <li><a class="link footer-title" href="">Useful Links</a></li>
+        <li><a class="link footer-text" href="">Services</a></li>
+        <li><a class="link footer-text" href="">Support</a></li>
+        <li><a class="link footer-text" href="">Conditions</a></li>
       </ul>
       <p>Social Handles</p>
-      <ul>
+      <ul class="list">
         <li>
           <a href="">
             <svg width="15" height="15">
