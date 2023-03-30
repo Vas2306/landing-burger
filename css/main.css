@@ -9,6 +9,10 @@
 }
 body {
   background-color: var(--background-black);
+  background-image: url(../img/bgc.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
   color: var(--color-title);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -67,16 +71,18 @@ align-items: center;
   display: flex;
   gap: 28px;
 }
-/* .hero{
-  width: 1600px;
-  height: 880px; 
-  background-image: url('../img/bgc.jpg');
-} */
+.hero{
+ height: 530px;  
+}
+.hero-container{
+  width: 546px;
+}
 .hero-addtext {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.1em;
+  margin-top: 250px;
 }
 .hero-title {
   font-weight: 500;
