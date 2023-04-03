@@ -6,6 +6,8 @@
   --color-title: #ffffff;
   --color-subtitle: rgba(255, 255, 255, 0.7);
   --color-footer: rgba(255, 255, 255, 0.8);
+    --swiper-theme-color: #efe6e0;
+      --swiper-navigation-size: 20px;
 }
 body {
   background-color: var(--background-black);
@@ -133,13 +135,18 @@ img {
 .king-wrap {
   display: flex;
   gap: 158px;
+  gap:120px;
+}
+.king-wrapper{
+  /* width: 300px; */
 }
 .king-title {
   font-weight: 500;
   font-size: 44px;
   line-height: 1.18;
   margin-bottom: 24px;
-  margin-top: 165px;
+  /* margin-top: 165px; */
+  margin-top: 120px;
 }
 .king-text {
   margin-bottom: 13px;
@@ -366,4 +373,34 @@ img {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
+}
+
+
+.swiper {
+  width: 600px;
+  height: 400px;
+  /* outline: 1px solid tomato; */
+}
+
+.swiper-slide {
+  text-align: center;
+  /* font-size: 18px; */
+  background-color: var(--background-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* outline: 1px solid greenyellow; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* height: 100%; */
+  object-fit: cover;
+  /* object-fit: contain; */
+}
+
+.swiper-pagination-fraction {
+  color: rgb(253, 253, 253);
 }

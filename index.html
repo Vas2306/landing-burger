@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burger landing page Dark mode</title>
+    <link rel="icon" type="image/x-icon" href="img/big-gumberger.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -12,6 +13,10 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -117,8 +122,16 @@
 
       <section class="king">
         <div class="container king-wrap">
-           <img width="549" height="499" src="img/big-gumberger.png" alt="" />
-           <div class="king-wrapper">
+          <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/01.png" alt=""/></div>
+        <div class="swiper-slide"><img src="img/02.png" alt=""/></div>
+        <div class="swiper-slide"><img src="img/03.png" alt=""/></div>
+        </div>
+        <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+          </div>
+       <div class="king-wrapper">
               <h2 class="king-title">Burger King</h2>
         <p class="king-text">
           Together with McDonald’s, Burger King has grown to become synonymous
@@ -126,7 +139,7 @@
         </p>
         <p class="king-new">$6<span class="king-old">$8</span></p>
        <button class="button btn-big" type="button">ORDER NOW</button> 
-           </div>
+           </div> 
       
         </div>
       
@@ -311,6 +324,19 @@
       </div>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
+  <!-- <script>
+    var swiper = new Swiper(".mySwiper", {});
+  </script> -->
+
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   </body>
 </html>
