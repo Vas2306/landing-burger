@@ -143,13 +143,16 @@ img {
 /* .king-wrapper{
   width: 300px;
 } */
+swiper-container{
+  width: 750px;
+}
 .king-title {
   font-weight: 500;
   font-size: 44px;
   line-height: 1.18;
   margin-bottom: 24px;
-  /* margin-top: 165px; */
-  margin-top: 120px;
+  margin-top: 160px;
+
 }
 .king-text {
   margin-bottom: 13px;
